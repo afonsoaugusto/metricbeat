@@ -14,7 +14,7 @@ def renderFile(filename):
     env = Environment(loader=FileSystemLoader('/templates'))
     template = env.get_template(filename)
     output_from_parsed_template = template.render(getVariables())
-    print(output_from_parsed_template)
+    #print(output_from_parsed_template)
 
     # to save the results
     with open(filename.replace('.j2', ''), "w") as fh:
